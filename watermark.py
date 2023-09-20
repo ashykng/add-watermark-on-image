@@ -8,7 +8,7 @@ main_image = Image.open(r"")
 # logo's path
 watermark = Image.open("")
 
-watermark_size = (int(watermark.size[0] * .3), int(watermark.size[1] * .3))
+watermark_size = (int(main_image.size[0] * .3), int(main_image.size[1] * .3))
 
 watermark = watermark.resize(watermark_size, resample=Image.LANCZOS)
 
